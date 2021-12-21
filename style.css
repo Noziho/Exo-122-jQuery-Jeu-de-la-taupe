@@ -67,3 +67,24 @@ h1 {
 .hole.up .mole {
   top: 0;
 }
+
+button {
+  background: #ff9900;
+  width: 10%;
+  border: 1px solid #222;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 620px) {
+  .game {
+    width: 100%;
+  }
+
+  .mole {
+    background-size: 80%;
+  }
+
+  button {
+    width: auto;
+  }
+}

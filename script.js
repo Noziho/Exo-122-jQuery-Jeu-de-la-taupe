@@ -19,6 +19,13 @@ function startGame() {
             if (timer > 0) {
                 timer--;
             }
+
+            else if (timer === 0) {
+                $('h1').text(`Partie finis, votre score total est de: ${compteur}`);
+                $('button').text(`restart`).click(function () {
+                    location.reload()
+                });
+            }
         }, 1000)
 
         setInterval(function () {
